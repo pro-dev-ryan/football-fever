@@ -116,13 +116,12 @@ header {
     border-radius: 10px;
 }
 
-.aside .active {
+.aside a:active,.aside li:hover {
     background-color: #df2e2e;
-    
+    color: #ffffff;
 }
-.aside .actv{
-color: #ffffff;
-}
+
+
 
 .aside a {
     text-decoration:none;
@@ -147,8 +146,45 @@ color: #ffffff;
     border-radius: 20px;
 }
 
+.game {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
 .blog-img img {
     width: 100%;
+}
+
+.flags {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flags img {
+    width:108px;
+    height:60px;
+}
+
+.versus {
+    font-family: poppins,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 10px;
+}
+
+.match-title {
+    font-family: poppins,sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px 0;
 }
 
 .blog-details {
@@ -195,6 +231,14 @@ color: #ffffff;
 .dimmed {
     color: rgba(22, 22, 22, 0.302);
 
+}
+
+.match-time {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Poppins,sans-serif;
+    text-align: center;
+    color: #4D4D4D;
 }
 
 footer {
