@@ -293,3 +293,75 @@ footer {
     margin: 20px 10px;
     font-size: 16px;
 }
+
+
+/*******************************************************************
+*************************** Responsive *****************************
+                           small-device
+********************************************************************/
+
+@media only screen and (max-width: 480px){
+    
+
+
+.hero {
+    flex-direction: column-reverse;
+    width: 98%;
+}
+.hero-img {
+    width: 100%;
+    border: none;
+}
+
+.hero-text {
+    width: 100%;
+}
+
+.blogs {
+    width: 98%;
+    gap:10px;
+    flex-direction: column;
+}
+
+.aside {
+    width: 100%;
+}
+
+.matches {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap:10px;
+    justify-items: center;
+
+}
+
+.game, .match {
+    width: 98%;
+    height: 100%;
+}
+
+.match-time {
+    margin-bottom: 10px;
+}
+
+.f-links {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+}
