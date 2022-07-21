@@ -75,7 +75,7 @@ header {
 
 .btn {
     text-decoration: none;
-    font-family: "Gill Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
     color: #ffffff;
 
@@ -233,12 +233,32 @@ header {
 
 }
 
+
+
 .match-time {
     font-size: 16px;
     font-weight: 400;
     font-family: Poppins,sans-serif;
     text-align: center;
     color: #4D4D4D;
+}
+
+.tab {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 50px;
+    display: none;
+
+}
+
+.tab-btn {
+    font-family: Poppins,sans-serif;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 25px;
+    background-color: #df2e2e;
+    border-radius: 5px;
+    display: none;
 }
 
 footer {
@@ -320,8 +340,11 @@ footer {
 
     .hero-text {
         width: 100%;
-        text-align: center;
 
+    }
+
+    .hero-text li {
+        margin-left: 20%;
     }
 
     .subtitle {
@@ -362,6 +385,11 @@ footer {
         width: 100%;
         flex-direction: column;
         align-items: center;
+    }
+
+    .tab,
+    .tab-btn {
+        display: none;
     }
 
     footer {
@@ -419,8 +447,19 @@ footer {
 
     .matches {
         grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        grid-column-gap: 43px;
+        margin-top: 20px;
     }
 
+    .tab {
+    display: flex;
+    justify-content: center;
+    }
+
+    .tab-btn{
+        display: block;
+    }
     .f-links {
         flex-wrap: wrap;
     }
