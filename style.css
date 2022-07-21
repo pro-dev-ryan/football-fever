@@ -42,7 +42,7 @@ header {
 }
 
 .subtitle {
-    font-family: 'Gill Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     margin-bottom: 30px;
 }
@@ -300,12 +300,12 @@ footer {
                            small-device
 ********************************************************************/
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 687px){
     
 
 
     .hero {
-        flex-direction: column-reverse;
+        flex-direction: column;
         width: 98%;
     }
     .hero-img {
@@ -315,12 +315,12 @@ footer {
 
     .big {
         font-size: 22px;
+        text-align: center;
     }
 
     .hero-text {
         width: 100%;
-        display: flex;
-        flex-direction: column;
+        text-align: center;
 
     }
 
@@ -328,7 +328,7 @@ footer {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 30px;
+    height: 20px;
     }
 
     .blogs {
@@ -378,11 +378,51 @@ footer {
                           Medium-device
 ********************************************************************/
 
-@media only screen and (min-width: 481px){
+@media only screen and (min-width: 688px) and (max-width: 1180px) {
     
+    .hero {
+        margin:25px 0;
+    }
 
+    .hero-text {
+        padding: 20px 0;
+    }
 
+    .big {
+        font-size: 40px;
+        font-weight: 700;
+    }
 
+    .subtitle {
+        font-family: Poppins, sans-serif;
+        margin-bottom: 10px;
+    }
 
+    .blogs {
+        display:block;
+        margin:0 auto;
+        gap: 5px;
+    }
 
-}
+    .aside {
+        width: 99%;
+        height: 120px;
+        padding: 10px 15px;
+        display:flex;
+        justify-content: center;
+    }
+
+    .aside li {
+        margin: 20px 34px;
+        padding: 15px 45px;
+    }
+
+    .matches {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .f-links {
+        flex-wrap: wrap;
+    }
+
+    }
